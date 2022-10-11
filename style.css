@@ -1,0 +1,120 @@
+:root{
+    --var--strongcyan: hsl(172, 67%, 45%);
+    --var--verydarkcyan: hsl(183, 100%, 15%);
+    --var--darkgrayishcyan: hsl(186, 14%, 43%);
+    --var--grayishcyan: hsl(184, 14%, 56%);
+    --var--lightgrayishcyan: hsl(185, 41%, 84%);
+    --var--verylightgrayishcyan: hsl(189, 41%, 97%);
+    --var--white: hsl(0, 0%, 100%);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--var--lightgrayishcyan);
+    font-family: 'Space Mono' , monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--var--darkgrayishcyan);
+}
+h1{
+    color: var(--var--strongcyan);
+    letter-spacing: 1rem;
+    font-size: 1.8rem;
+
+}
+h3{
+    color: var(--var--strongcyan);
+    font-size: 2rem;
+    margin: 0;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    background-color: var(--var--verylightgrayishcyan);
+}
+.app{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.card{
+    background-color: var(--var--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+.box-data{
+    width: 50%;
+    margin: 2rem;
+}
+.box-tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.btn{
+    background-color: var(--var--verydarkcyan);
+    color: var(--var--white);
+    border: none;
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.box-tipsamount{
+    background-color: var(--var--verydarkcyan);
+    width: 80%;
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.box-tipsamount .box-inputtotal input{
+    margin:0.3rem 0 0.3rem 0;
+}
+.box-tipsamount .box-inputtotal label{
+    color: var(--var--white);
+}
+.box-tipsamount .box-inputtotal span{
+    display: block;
+    color: var(--var--grayishcyan);
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.selected{
+    background-color: var(--var--strongcyan);
+    color: var(--var--verydarkcyan);
+}
+
+.text-align-right{
+    text-align: right;
+}
+#reset{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--var--strongcyan);
+    border: 0;
+    border-radius: 0.3rem;
+    color: var(--var--verydarkcyan);
+    font-weight: 700;
+    cursor: pointer;
+}

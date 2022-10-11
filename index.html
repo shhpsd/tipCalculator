@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>TipCalculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>SPLI<br>TTER</h1>
+        <div class="card">
+            <div class="box-data flex-column">
+                <label>Bill</label>
+                <input id="bill" type="text" value="" placeholder="$" class="text-align-right">
+                <label>Select Tip %</label>
+                <div class="box-tips">
+                    <input class="btn" type="button" value="5%" placeholder="5">
+                    <input class="btn" type="button" value="10%" placeholder="10">
+                    <input class="btn" type="button" value="15%" placeholder="15">
+                    <input class="btn" type="button" value="25%" placeholder="25">
+                    <input class="btn" type="button" value="50%" placeholder="50">
+                    <input id="customTip" type="text" value="" placeholder="Custom">
+                </div>
+                <label>Number of People</label>
+                <input type="text" id="inputNumberPeople">
+
+            </div>
+            <div class="box-tipsamount flex-column">
+                <div class="box-inputtotal">
+                    <div class="data">
+                        <label>Tip amount
+                        <span>/ Person</span></label>
+                        <h3 id="tipAmount">0$</h3>                        
+                    </div>
+                    <div class="data">
+                        <label>Total
+                        <span>/ Person</span></label>
+                        <h3 id="totalAmount">0$</h3>
+                    </div>
+                </div>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
