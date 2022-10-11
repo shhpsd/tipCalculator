@@ -118,3 +118,15 @@ input{
     font-weight: 700;
     cursor: pointer;
 }
+
+@media screen and (max-width:600px) {
+    .card{
+        flex-direction: column;
+    }
+
+    .box-data{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
